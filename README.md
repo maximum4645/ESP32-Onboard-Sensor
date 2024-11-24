@@ -38,5 +38,6 @@ ESP32 SPIFFS
 BMP280, MPU6050, SHT4x sensors
 <br/>
 HTTP + JSON API
+<br/>
 
 ![p3](https://github.com/user-attachments/assets/3e3a1e67-bdc6-456d-9ac9-ba6e8d5024df)
