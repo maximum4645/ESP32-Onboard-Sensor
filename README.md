@@ -1,9 +1,6 @@
 # Overview
-In this project, an ESP32 functions as a web server, serving a webpage displaying its onboard sensor data in real-time.
-The ESP32 reads data from BMP280, MPU6050, and SHT4x sensors and provides the data via an API endpoint, "/sensor", in JSON format.
-<br/>
-The webpage hosted on the ESP32 fetches and displays the sensor data dynamically using JavaScript.
-<br/><br/>
+This project uses an ESP32 as a web server to collect data from BMP280, MPU6050, and SHT4x sensors, provide it in JSON format through a "/sensor" API endpoint, and dynamically display it on a real-time webpage using JavaScript.<br/>
+
 The ESP32 uses FreeRTOS to run three concurrent threads:
 <br/>
 1.update_sensor_data: Reads data from the sensors every 10 seconds and updates global variables.
