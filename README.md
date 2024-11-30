@@ -9,7 +9,7 @@ The ESP32 uses FreeRTOS to run three concurrent threads:
 <br/>
 3.update_with_NTP: Syncs the local time with an NTP server every minute.<br/>
 
-**youtube**: https://youtu.be/n_eKqIBGxCw?si=hSastkBCULhc7ygm<br/><br/>
+**youtube**: https://youtu.be/n_eKqIBGxCw?si=hSastkBCULhc7ygm<br/>
 
 ![p3](https://github.com/user-attachments/assets/3e3a1e67-bdc6-456d-9ac9-ba6e8d5024df)
 
