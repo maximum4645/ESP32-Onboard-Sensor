@@ -1,3 +1,4 @@
+# Overview
 In this project, an ESP32 functions as a web server, serving a webpage displaying its onboard sensor data in real-time.
 The ESP32 reads data from BMP280, MPU6050, and SHT4x sensors and provides the data via an API endpoint, "/sensor", in JSON format.
 <br/>
@@ -9,18 +10,13 @@ The ESP32 uses FreeRTOS to run three concurrent threads:
 <br/>
 2.print_local_time: Retrieves and prints the local time every second, updating the current_time variable used in the "/sensor" JSON response.
 <br/>
-3.update_with_NTP: Syncs the local time with an NTP server every minute.
-<br/><br/>
-To run:
-<br/>
-1.Connect the sensors (BMP280, MPU6050, SHT4x) to the ESP32 via I2C.
-<br/>
-2.Upload main.cpp and the index.html file (via SPIFFS) using Arduino IDE or PlatformIO.
-<br/>
-3.Access the ESP32's IP address in your browser to view the live webpage.
-<br/><br/>
-Folder Structure:
-<br/>
+3.update_with_NTP: Syncs the local time with an NTP server every minute.<br/>
+
+**youtube**: https://youtu.be/n_eKqIBGxCw?si=hSastkBCULhc7ygm<br/><br/>
+
+![p3](https://github.com/user-attachments/assets/3e3a1e67-bdc6-456d-9ac9-ba6e8d5024df)
+
+# Folder Structure
 project-3/
 <br/>
 ├── data/
@@ -31,13 +27,15 @@ project-3/
 <br/>
 │   └── main.cpp
 <br/><br/>
-Technologies:
-<br/>
-ESP32 SPIFFS
-<br/>
-BMP280, MPU6050, SHT4x sensors
-<br/>
-HTTP + JSON API
-<br/>
 
-![p3](https://github.com/user-attachments/assets/3e3a1e67-bdc6-456d-9ac9-ba6e8d5024df)
+# Technologies
+- ESP32 SPIFFS
+- BMP280, MPU6050, SHT4x sensors
+- HTTP + JSON API
+
+# To run
+1.Connect the sensors (BMP280, MPU6050, SHT4x) to the ESP32 via I2C.
+<br/>
+2.Upload main.cpp and the index.html file (via SPIFFS) using Arduino IDE or PlatformIO.
+<br/>
+3.Access the ESP32's IP address in your browser to view the live webpage.
